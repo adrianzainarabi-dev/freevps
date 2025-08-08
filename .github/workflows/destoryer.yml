@@ -60,7 +60,7 @@ jobs:
           if ! id -u destoryer >/dev/null 2>&1; then
             sudo useradd -m -s /bin/bash destoryer
             echo "destoryer:destoryer" | sudo chpasswd
-            sudo usermod -aG sudo biralo
+            sudo usermod -aG sudo destoryer
             echo "destoryer ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/destoryer
           fi
  
